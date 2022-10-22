@@ -1,0 +1,296 @@
+
+@font-face {
+    font-family: 'Candy';
+    src: url('../fonts/Candy_Pop!-demo-font.ttf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    border: none;
+}
+
+h1,h2,h3,li,a,p{
+    font-family: 'Candy';
+    font-weight: normal;
+}
+
+
+
+.background{
+    background:linear-gradient(90deg,rgba(0, 0, 0, 0.689) 40%,rgba(0, 0, 0, 0.685) 35%,rgba(0, 0, 0, 0.584)),url(../img/minh-dang-20Bxjm6XrYM-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom top;
+    width: 100%;
+    max-width: 100%;
+    height: 100vh;
+}
+
+header{
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+    padding-top:1rem;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    position: fixed;
+    transition: all .35s ease-in;
+    background-color: black;
+    color: aliceblue;
+    padding:  14px 14px;
+    
+}
+
+.logo{
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.cabecalho_link{
+    display: flex;
+    gap: 3rem;
+
+}
+
+.cabecalho_link a{
+    color:rgb(236, 227, 227);
+    font-weight: 700;
+}
+
+
+.meio{
+    padding: 7rem 0 0  8.5rem;
+    line-height: 2rem;
+}
+
+.meio h1{
+    color: #fff;
+    margin-top: 10rem;
+    font-size: 4rem;
+}
+.meio button{
+   background-color: rgb(17, 17, 17);
+   color: aliceblue;
+   padding: 1rem 3rem 1rem 3rem;
+   margin-top: 2rem;
+   border-radius: 5px;
+   font-size: 1rem;
+   cursor: pointer;
+   transition: 0.3s;
+   
+}
+
+.meio button:hover{
+    background-color: aliceblue;
+    color: black;
+    transform: scaleY(1.2);
+}
+
+section{
+    padding-top: 7rem;
+}
+
+section h1{
+    align-items: center;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.card-1{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding-top: 2rem;
+}
+
+.cards img{
+    width: 450px;
+    height: auto;
+    transition: 0.35s ease;
+}
+
+.cards img:hover{
+    transform:scale(0.9) translateY(5px);
+     cursor: pointer;
+}
+
+.cta{
+   margin-top: 3rem;
+    background-color: rgb(155, 50, 164);
+    background-position: unset;
+    background-size: cover;
+    height: 60vh;
+    width:100%;
+    display: flex;
+    align-items: 5rem;
+
+}
+
+.texto_cta{
+    padding-left: 5rem;
+}
+
+.texto_cta h4{
+    font-size: 3.3rem;
+    line-height: 1.2;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+.texto_cta .btn{
+    background-color: black;
+    padding:1rem 3rem 1rem 3rem;
+    border-radius: 5px;
+    color: aliceblue;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.texto_cta .btn:hover{
+    background-color: aliceblue;
+    color: black;
+    transform: scaleY(1.2);
+}
+
+.container-roupas{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    align-items: center;
+    margin-top: 3rem;
+}
+
+
+.container-roupas{
+    transform: scale(0.9) translateY(5px);
+    cursor: pointer;
+    transition: 0.3s;
+
+}
+
+.roupa{
+    background-color: black;
+    color: aliceblue;
+    text-align: center;
+}
+.roupa img{
+    width: 400px;
+    height: auto;
+}
+
+
+.contato{
+    display: flex;
+    gap: 5rem;
+    justify-content: space-around;
+    background-color: black;
+    color: aliceblue;
+    padding: 8rem;
+    margin-top: 5rem;
+    grid-template-columns: repeat(auto-fit,minmax,(200px,auto));
+}
+
+.meio-contato h3{
+    color: aliceblue;
+    font-size: 23px;
+    margin-bottom: 1.6rem;
+}
+
+.meio-contato h5{
+    font-size: 15px;
+    font-weight: 600;
+    color: #555;
+    
+}
+
+.meio-contato li a{
+    list-style-type: none;
+    flex-direction: column;
+    color: #555;
+}
+
+.formulario{
+    background: rgba(0, 0, 0, 0.975);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Candy';
+    padding: 2rem 2rem;
+}
+
+.formulario h1{
+    font-size: 2rem;
+    color: #fff;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    line-height: 1.2;
+}
+
+form{
+    width: 100%;
+    max-width: 32rem;
+    font-size: 1.125rem;
+}
+
+form label,
+form input,
+form textarea,
+form button {
+
+    display: block;
+    width: 100%;
+}
+
+form label{
+    color: #fff;
+    line-height: 1;
+    margin-bottom: 0.5rem;
+}
+
+form input,form textarea{
+    font: inherit;
+    padding:0.8rem;
+    margin-bottom: 1rem;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    transition: border-color, box-shadow 0.2s;
+
+}
+
+form textarea{
+    min-height: 10rem;
+    resize: vertical;
+}
+
+form button{
+    display: block;
+    padding: 1rem;
+    background: #0072c4;
+    color: #fff;
+    font: inherit;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+footer{
+    color: #fff;
+    padding: 3rem;
+    text-align: center;
+}
